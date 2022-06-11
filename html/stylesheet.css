@@ -69,6 +69,7 @@ button {
   height: 150px;
   padding: 0px 0px 20px 0px;
   margin: 10px auto;
+  cursor: pointer;
 }
 @media screen and (max-width: 900px) {
   body {
@@ -99,6 +100,14 @@ button {
   }
   nav {
     display: flex;
+    flex-direction: row;
+  }
+  button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  aside {
     flex-direction: row;
   }
 }
