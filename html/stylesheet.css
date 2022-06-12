@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 html {
-  background-color: lightgray;
+  background-color: black;
 }
 body {
   max-width: 1800px;
@@ -15,6 +15,16 @@ body {
     "header header header"
     "navigation content sidebar"
     "footer footer footer";
+}
+h1 {
+  color: #25a244;
+  margin-left: 20px;
+}
+h2 {
+  color: #b7efc5;
+}
+h2#kontakt {
+  margin-left: 5px;
 }
 header,
 nav,
@@ -45,8 +55,14 @@ aside {
 footer {
   grid-area: footer;
 }
+input {
+  margin: 10px auto;
+  width: 150px;
+  height: 150px;
+}
 
 a {
+  color: #92e6a7;
   text-decoration: none;
 }
 a.search {
@@ -55,16 +71,14 @@ a.search {
   height: 10px;
 }
 #backpoint {
-  text-decoration: none;
   font-size: 50px;
   color: #b7efc5;
 }
 #backpoint:hover {
-  color: #92e6a7;
   text-shadow: 0px 0px 10px;
 }
 button {
-  border-radius: 50%;
+  border-radius: 25%;
   width: 150px;
   height: 150px;
   padding: 0px 0px 20px 0px;
