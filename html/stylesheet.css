@@ -36,13 +36,16 @@ footer {
 }
 header {
   grid-area: header;
+  display: flex;
+  flex-direction: row;
 }
 nav {
   grid-area: navigation;
 }
 nav li {
-  font-size: 20px;
+  font-size: 25px;
   list-style-type: none;
+  padding-bottom: 10px;
 }
 main {
   grid-area: content;
@@ -60,6 +63,9 @@ input {
   width: 150px;
   height: 150px;
 }
+input#form {
+  border-radius: 50%;
+}
 
 a {
   color: #92e6a7;
@@ -70,9 +76,11 @@ a.search {
   flex-direction: row;
   height: 10px;
 }
-#backpoint {
+a#backpoint {
   font-size: 50px;
   color: #b7efc5;
+  margin-left: 39px;
+  padding-top: 10px;
 }
 #backpoint:hover {
   text-shadow: 0px 0px 10px;
