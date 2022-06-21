@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheet.css" />
     <title>Fomular</title>
-</head>
-<body>
-    <body>
-        <header>
-          <a href="index.html" rel="noopener noreferrer" id="backpoint"
-            >Enrico Proietto</a
-          >
-          <!---<input type="search" name="" id="search" /> -->
-        </header>
-</body>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" rel="noopener noreferrer" id="backpoint"
+        >Enrico Proietto</a
+      >
+      <!---<input type="search" name="" id="search" /> -->
+    </header>
+    <main id="formmain">
+      <form action="" method="post">
+        <div>
+          <label class="formbox" for="vorname">Vorname *</label><br />
+          <input
+            type="text"
+            name="vorname"
+            id="vorname"
+            minlength="1"
+            maxlength="30"
+            required
+          />
+        </div>
+        <div>
+          <label class="formbox" for="nachname">Nachname *</label><br />
+          <input
+            type="text"
+            name="nachname"
+            id="nachname"
+            minlength="1"
+            maxlength="50"
+            required
+          />
+        </div>
+        <div>
+          <label class="formbox" for="nachricht">Nachricht *</label><br />
+          <textarea
+            name="nachricht"
+            id="nachricht"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <div>
+          <input type="submit" id="send" value="Senden" />
+          <input type="reset" id="delete" value="Löschen" />
+        </div>
+      </form>
+    </main>
+  </body>
 </html>

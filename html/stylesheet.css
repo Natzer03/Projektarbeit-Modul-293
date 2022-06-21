@@ -49,6 +49,11 @@ nav li {
 }
 main {
   grid-area: content;
+  color: #ae6bff;
+}
+div.maincontent {
+  font-size: 22px;
+  margin-left: 20px;
 }
 aside {
   grid-area: sidebar;
@@ -93,6 +98,35 @@ button {
   margin: 10px auto;
   cursor: pointer;
 }
+#formmain {
+  margin: 0 auto;
+}
+.formbox {
+  font-size: 25px;
+}
+#vorname,
+#nachname {
+  height: 35px;
+  width: 300px;
+  font-size: 20px;
+  background-color: black;
+  color: #ae6bff;
+}
+#nachricht {
+  height: 120px;
+  width: 300px;
+  font-size: 20px;
+  background-color: black;
+  color: #ae6bff;
+}
+#send,
+#delete {
+  height: 30px;
+  font-size: 15px;
+  color: #ae6bff;
+  background-color: black;
+}
+
 @media screen and (max-width: 900px) {
   body {
     grid-template-columns: 80% 20%;
@@ -103,12 +137,16 @@ button {
       "content sidebar"
       "footer footer";
   }
-  nav {
+  nav ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  nav li {
+    padding-right: 20px;
   }
 }
-
 @media screen and (max-width: 600px) {
   body {
     grid-template-columns: 100%;
