@@ -17,13 +17,11 @@ body {
     "footer footer footer";
 }
 h1 {
-  color: #25a244;
+  color: #92e6a7;
   margin-left: 20px;
 }
-h2 {
-  color: #b7efc5;
-}
 h2#kontakt {
+  color: #92e6a7;
   margin-left: 5px;
 }
 header,
@@ -32,7 +30,6 @@ main,
 aside,
 footer {
   min-height: 100px;
-  border: 2px solid black;
 }
 header {
   grid-area: header;
@@ -62,8 +59,10 @@ aside {
 }
 footer {
   grid-area: footer;
+  padding-left: 45px;
+  color: #ae6bff;
 }
-input {
+input.contactlinks {
   margin: 10px auto;
   width: 150px;
   height: 150px;
@@ -83,7 +82,7 @@ a.search {
 }
 a#backpoint {
   font-size: 50px;
-  color: #b7efc5;
+  color: #92e6a7;
   margin-left: 39px;
   padding-top: 10px;
 }
@@ -102,32 +101,41 @@ button {
   margin: 0 auto;
 }
 .formbox {
-  font-size: 25px;
+  font-size: 30px;
 }
 #vorname,
 #nachname {
-  height: 35px;
-  width: 300px;
+  height: 50px;
+  width: 450px;
   font-size: 20px;
   background-color: black;
   color: #ae6bff;
 }
 #nachricht {
-  height: 120px;
-  width: 300px;
+  height: 220px;
+  width: 450px;
   font-size: 20px;
   background-color: black;
   color: #ae6bff;
 }
 #send,
 #delete {
-  height: 30px;
-  font-size: 15px;
+  height: 50px;
+  width: 110px;
+  font-size: 25px;
   color: #ae6bff;
   background-color: black;
 }
 
-@media screen and (max-width: 900px) {
+#profilepicture {
+  float: right;
+  height: 450px;
+  width: 400px;
+  margin-right: 20px;
+  border: 1px solid #ae6bff;
+}
+
+@media screen and (max-width: 1420px) {
   body {
     grid-template-columns: 80% 20%;
     grid-template-rows: 100px 150px 1fr 100px;
@@ -146,8 +154,17 @@ button {
   nav li {
     padding-right: 20px;
   }
+  #profilepicture {
+    height: 250px;
+    width: 200px;
+  }
+  .contactlinks {
+    width: 100px;
+    height: 100px;
+  }
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 770px) {
   body {
     grid-template-columns: 100%;
     grid-template-rows: 100px 150px 1fr 0.5fr 100px;
@@ -169,5 +186,15 @@ button {
   }
   aside {
     flex-direction: row;
+    display: block;
+  }
+  #profilepicture {
+    height: 200px;
+    width: 180px;
+  }
+
+  input.contactlinks {
+    width: 85px;
+    height: 85px;
   }
 }
