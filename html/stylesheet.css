@@ -134,8 +134,8 @@ button {
 
 #profilepicture {
   float: right;
-  height: 450px;
-  width: 400px;
+  height: 225px;
+  width: 200px;
   margin-right: 20px;
   border: 1px solid #ae6bff;
 }
@@ -152,10 +152,31 @@ button {
   width: 210px;
   float: right;
 }
+#billiard {
+  padding-left: 20px;
+}
+.schuellinks {
+  text-decoration: none;
+  color: #ae6bff;
+}
+#schuelist {
+  margin: auto;
+}
+
+.container {
+  margin: 0px 0px 0 350px;
+}
+.vl {
+  width: 3px;
+  height: 50px;
+  background-color: #ae6bff;
+  left: 50%;
+  margin: 15px 0 15px 200px;
+}
 @media screen and (max-width: 1420px) {
   body {
     grid-template-columns: 80% 20%;
-    grid-template-rows: 100px 150px 1fr 100px;
+    grid-template-rows: 100px 150px 0.9fr 50px;
     grid-template-areas:
       "header header"
       "navigation navigation"
@@ -176,8 +197,8 @@ button {
     width: 200px;
   }
   .contactlinks {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
   }
 }
 #billiardcenter {
@@ -189,7 +210,7 @@ button {
 @media screen and (max-width: 770px) {
   body {
     grid-template-columns: 100%;
-    grid-template-rows: 100px 150px 1fr 0.25fr 100px;
+    grid-template-rows: 100px 150px 1fr 0.7fr 100px;
     grid-template-areas:
       "header"
       "navigation"
@@ -222,5 +243,14 @@ button {
   }
   .hqlinks {
     justify-content: start;
+  }
+
+  ul {
+    padding-left: 0px;
+  }
+
+  #billiardcenter {
+    width: 150px;
+    height: 115px;
   }
 }
