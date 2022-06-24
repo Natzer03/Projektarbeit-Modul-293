@@ -15,13 +15,15 @@
     </header>
     <nav>
       <ul>
-        <li><a href="person.html">Person</a></li>
-        <ul>
-          <li><a href="hobbys.html">Hobbys</a></li>
-        </ul>
-        <li><a href="schule.html">Schule</a></li>
-        <li><a href="fachwissen.html">Fachwissen</a></li>
-        <li><a href="lehre.html">Lehre</a></li>
+        <li><a class="hqlinks" href="person.html">Person</a></li>
+        <li>
+          <ul>
+            <li><a class="hqlinks" href="hobbys.html">Hobbys</a></li>
+          </ul>
+        </li>
+        <li><a class="hqlinks" href="schule.html">Schule</a></li>
+        <li><a class="hqlinks" href="fachwissen.html">Fachwissen</a></li>
+        <li><a class="hqlinks" href="lehre.html">Lehre</a></li>
       </ul>
     </nav>
     <main>
@@ -31,11 +33,20 @@
         <div class="maincontent">
           <h2>Billiard</h2>
           <p></p>
+          <iframe
+            id="billiardcenter"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10771.419109055234!2d7.5882959!3d47.5511551!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf143a44f81f27924!2sBillard-Saloon!5e0!3m2!1sde!2sch!4v1655989670939!5m2!1sde!2sch"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
           In meiner Freizeit spiele ich sehr gerne Billiard.
           <h2>Dart</h2>
           <p></p>
 
           <h2>Gaming</h2>
+          Am meisten verbringe ich meine Freizeit mit
           <p></p>
         </div>
       </article>
@@ -65,6 +76,13 @@
         onclick="window.location.href = 'formular.html';"
       />
     </aside>
-    <footer><h2>©2022 Enrico Proietto All Rights Reserved</h2></footer>
+    <footer>
+      <h2>
+        <div>
+          ©2022 Enrico Proietto All Rights Reserved |
+          <a id="datenschutzlink" href="datenschutz.html">Datenschutz</a> |
+        </div>
+      </h2>
+    </footer>
   </body>
 </html>
