@@ -147,7 +147,11 @@ button {
   color: #ae6bff;
   padding-left: 20px;
 }
-
+#ictwlogo {
+  height: 100px;
+  width: 210px;
+  float: right;
+}
 @media screen and (max-width: 1420px) {
   body {
     grid-template-columns: 80% 20%;
@@ -185,7 +189,7 @@ button {
 @media screen and (max-width: 770px) {
   body {
     grid-template-columns: 100%;
-    grid-template-rows: 100px 150px 1fr 1fr 100px;
+    grid-template-rows: 100px 150px 1fr 0.25fr 100px;
     grid-template-areas:
       "header"
       "navigation"
@@ -196,6 +200,7 @@ button {
   nav {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
   }
   button {
     width: 30px;
@@ -214,5 +219,8 @@ button {
   input.contactlinks {
     width: 85px;
     height: 85px;
+  }
+  .hqlinks {
+    justify-content: start;
   }
 }
