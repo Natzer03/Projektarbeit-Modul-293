@@ -181,7 +181,7 @@ button {
 @media screen and (max-width: 1420px) {
   body {
     grid-template-columns: 80% 20%;
-    grid-template-rows: 100px 150px 0.9fr 50px;
+    grid-template-rows: 100px 150px 1fr 150px;
     grid-template-areas:
       "header header"
       "navigation navigation"
@@ -221,7 +221,7 @@ button {
 @media screen and (max-width: 770px) {
   body {
     grid-template-columns: 100%;
-    grid-template-rows: 100px 150px 1fr 0.6fr 100px;
+    grid-template-rows: 100px 150px 1fr 0.8fr 100px;
     grid-template-areas:
       "header"
       "navigation"
@@ -265,7 +265,7 @@ button {
     height: 115px;
   }
 }
-#coop {
+#cooplogo {
   float: right;
   width: 320px;
   height: 190px;
@@ -274,7 +274,7 @@ button {
 @media screen and (max-width: 500px) {
   body {
     grid-template-columns: 100%;
-    grid-template-rows: 100px 75px 1fr 0.4fr 100px;
+    grid-template-rows: 100px 75px 1fr 0.6fr 100px;
     grid-template-areas:
       "header"
       "navigation"
