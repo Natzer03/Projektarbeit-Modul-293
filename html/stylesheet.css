@@ -173,7 +173,7 @@ button {
   left: 50%;
   margin: 15px 0 15px 200px;
 }
-#coop {
+#cooplogo {
   float: right;
   width: 500px;
   height: 300px;
@@ -215,6 +215,9 @@ button {
     float: right;
     width: 400px;
     height: 250px;
+  }
+  .container {
+    margin: 0px 0px 0 200px;
   }
 }
 
@@ -264,17 +267,20 @@ button {
     width: 150px;
     height: 115px;
   }
-}
-#cooplogo {
-  float: right;
-  width: 320px;
-  height: 190px;
+  .container {
+    margin: 0px 0px 0 100px;
+  }
+  #cooplogo {
+    float: right;
+    width: 320px;
+    height: 190px;
+  }
 }
 
 @media screen and (max-width: 500px) {
   body {
     grid-template-columns: 100%;
-    grid-template-rows: 100px 75px 1fr 0.6fr 100px;
+    grid-template-rows: 100px 75px 1fr 1fr 100px;
     grid-template-areas:
       "header"
       "navigation"
@@ -285,11 +291,14 @@ button {
   nav li {
     font-size: 20px;
   }
+  .container {
+    margin: 0px 0px 0 25px;
+  }
 }
 @media screen and (max-width: 350px) {
   body {
     grid-template-columns: 100%;
-    grid-template-rows: 150px 75px 1fr 0.8fr 150px;
+    grid-template-rows: 150px 75px 1fr 1fr 150px;
     grid-template-areas:
       "header"
       "navigation"
