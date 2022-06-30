@@ -280,7 +280,7 @@ button {
 @media screen and (max-width: 500px) {
   body {
     grid-template-columns: 100%;
-    grid-template-rows: 100px 75px 1fr 1fr 100px;
+    grid-template-rows: 150px 100px 1fr 1fr 100px;
     grid-template-areas:
       "header"
       "navigation"
@@ -293,6 +293,19 @@ button {
   }
   .container {
     margin: 0px 0px 0 25px;
+  }
+  #kvbllink {
+    font-size: 16px;
+  }
+  #ictwlink {
+    font-size: 16px;
+    padding-right: 0px;
+  }
+  #newli {
+    padding: 0px 0px 10px 0px;
+  }
+  #personlink {
+    padding: 0px 0px 0px 20px;
   }
 }
 @media screen and (max-width: 350px) {
